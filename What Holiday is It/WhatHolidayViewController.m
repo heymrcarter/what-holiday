@@ -7,6 +7,7 @@
 //
 
 #import "WhatHolidayViewController.h"
+#import "DayDisplayView.h"
 
 @interface WhatHolidayViewController ()
 
@@ -14,16 +15,21 @@
 
 @implementation WhatHolidayViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self setNeedsStatusBarAppearanceUpdate];
+    CGRect statusBar = [UIApplication sharedApplication].statusBarFrame;
+    DayDisplayView *dateDisplay = [[DayDisplayView alloc] initWithFrame:CGRectMake(0,0, statusBar.size.width, 140)];
+    [self.view addSubview:dateDisplay];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
 
 @end

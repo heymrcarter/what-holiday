@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E20C27C618DF7D3D004609E6 /* DayDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = E20C27C518DF7D3D004609E6 /* DayDisplayView.m */; };
 		E2D2379E18DF649A001DD950 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D2379D18DF649A001DD950 /* Foundation.framework */; };
 		E2D237A018DF649A001DD950 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D2379F18DF649A001DD950 /* CoreGraphics.framework */; };
 		E2D237A218DF649A001DD950 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D237A118DF649A001DD950 /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E20C27C418DF7D3D004609E6 /* DayDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayDisplayView.h; sourceTree = "<group>"; };
+		E20C27C518DF7D3D004609E6 /* DayDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayDisplayView.m; sourceTree = "<group>"; };
 		E2D2379A18DF649A001DD950 /* What Holiday is It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What Holiday is It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D2379D18DF649A001DD950 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E2D2379F18DF649A001DD950 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -85,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E20C27C318DF7D0F004609E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E20C27C418DF7D3D004609E6 /* DayDisplayView.h */,
+				E20C27C518DF7D3D004609E6 /* DayDisplayView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		E2D2379118DF6499001DD950 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +130,7 @@
 		E2D237A318DF649A001DD950 /* What Holiday is It */ = {
 			isa = PBXGroup;
 			children = (
+				E20C27C318DF7D0F004609E6 /* Views */,
 				E2D237D218DF6536001DD950 /* Models */,
 				E2D237AF18DF649A001DD950 /* Main.storyboard */,
 				E2D237B218DF649A001DD950 /* WhatHolidayViewController.h */,
@@ -275,6 +288,7 @@
 				E2D237B418DF649A001DD950 /* WhatHolidayViewController.m in Sources */,
 				E2F1463418DF6D4200A7A73D /* Calendar.m in Sources */,
 				E2D237D518DF656C001DD950 /* Holiday.m in Sources */,
+				E20C27C618DF7D3D004609E6 /* DayDisplayView.m in Sources */,
 				E2D237AA18DF649A001DD950 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
