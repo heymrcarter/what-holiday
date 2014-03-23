@@ -22,6 +22,7 @@
 		E2D237C718DF649A001DD950 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2D237C518DF649A001DD950 /* InfoPlist.strings */; };
 		E2D237C918DF649A001DD950 /* What_Holiday_is_ItTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D237C818DF649A001DD950 /* What_Holiday_is_ItTests.m */; };
 		E2D237D518DF656C001DD950 /* Holiday.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D237D418DF656C001DD950 /* Holiday.m */; };
+		E2F1463418DF6D4200A7A73D /* Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F1463318DF6D4200A7A73D /* Calendar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		E2D237C818DF649A001DD950 /* What_Holiday_is_ItTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = What_Holiday_is_ItTests.m; sourceTree = "<group>"; };
 		E2D237D318DF656C001DD950 /* Holiday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Holiday.h; sourceTree = "<group>"; };
 		E2D237D418DF656C001DD950 /* Holiday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Holiday.m; sourceTree = "<group>"; };
+		E2F1463218DF6D4200A7A73D /* Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calendar.h; sourceTree = "<group>"; };
+		E2F1463318DF6D4200A7A73D /* Calendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calendar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,8 @@
 			children = (
 				E2D237D318DF656C001DD950 /* Holiday.h */,
 				E2D237D418DF656C001DD950 /* Holiday.m */,
+				E2F1463218DF6D4200A7A73D /* Calendar.h */,
+				E2F1463318DF6D4200A7A73D /* Calendar.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 			files = (
 				E2D237AE18DF649A001DD950 /* AttributorAppDelegate.m in Sources */,
 				E2D237B418DF649A001DD950 /* AttributorViewController.m in Sources */,
+				E2F1463418DF6D4200A7A73D /* Calendar.m in Sources */,
 				E2D237D518DF656C001DD950 /* Holiday.m in Sources */,
 				E2D237AA18DF649A001DD950 /* main.m in Sources */,
 			);
@@ -478,6 +484,7 @@
 				E2D237CE18DF649A001DD950 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2D237CF18DF649A001DD950 /* Build configuration list for PBXNativeTarget "What Holiday is ItTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +493,7 @@
 				E2D237D118DF649A001DD950 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
