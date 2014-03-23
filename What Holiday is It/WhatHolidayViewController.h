@@ -1,5 +1,5 @@
 //
-//  AttributorViewController.h
+//  WhatHolidayViewController.h
 //  What Holiday is It
 //
 //  Created by Tom Carter on 3/23/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AttributorViewController : UIViewController
+@interface WhatHolidayViewController : UIViewController
 
 @end

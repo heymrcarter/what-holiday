@@ -14,20 +14,20 @@
     return nil;
 }
 
-- (Holiday *) initWithId:(NSNumber *)id
+- (Holiday *) initWithId:(NSUInteger)id
                  AndName:(NSString *)name
                  AndDate:(NSDate *)date
-           AndRecurrance:(NSNumber *)recurrance
+           AndRecurrance:(NSUInteger)recurrance
                AndSource:(NSString *)source
           AndShouldAlert:(bool)shouldAlert
 {
     self = [super init];
     
     if (self) {
-        self.id = id;
+        self.id = [NSNumber numberWithInt:id];
         self.name = name;
         self.date = date;
-        self.recurrance = recurrance;
+        self.recurrance = [NSNumber numberWithInt:recurrance];
         self.source = source;
         self.shouldAlert = [NSNumber numberWithBool:shouldAlert];
     }

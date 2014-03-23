@@ -1,18 +1,18 @@
 //
-//  AttributorViewController.m
+//  WhatHolidayViewController.m
 //  What Holiday is It
 //
 //  Created by Tom Carter on 3/23/14.
 //  Copyright (c) 2014 Louglu. All rights reserved.
 //
 
-#import "AttributorViewController.h"
+#import "WhatHolidayViewController.h"
 
-@interface AttributorViewController ()
+@interface WhatHolidayViewController ()
 
 @end
 
-@implementation AttributorViewController
+@implementation WhatHolidayViewController
 
 - (void)viewDidLoad
 {

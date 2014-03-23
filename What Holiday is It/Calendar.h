@@ -12,6 +12,8 @@
 @interface Calendar : NSObject
 @property (strong, nonatomic) NSMutableArray *calendar;
 
+- (Calendar *) init;
+- (Calendar *) initWithHolidays:(NSMutableArray *) holidays;
 - (void) addHoliday:(Holiday *)holiday;
 - (void) removeHoliday:(Holiday *)holiday;
 @end

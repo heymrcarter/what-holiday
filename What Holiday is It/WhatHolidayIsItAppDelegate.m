@@ -1,14 +1,14 @@
 //
-//  AttributorAppDelegate.m
+//  WhatHolidayIsItAppDelegateAppDelegate.m
 //  What Holiday is It
 //
 //  Created by Tom Carter on 3/23/14.
 //  Copyright (c) 2014 Louglu. All rights reserved.
 //
 
-#import "AttributorAppDelegate.h"
+#import "WhatHolidayIsItAppDelegate.h"
 
-@implementation AttributorAppDelegate
+@implementation WhatHolidayIsItAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

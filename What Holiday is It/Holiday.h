@@ -18,10 +18,10 @@
 
 - (Holiday *) init;
 //designated initializer
-- (Holiday *) initWithId:(NSNumber *)id
+- (Holiday *) initWithId:(NSUInteger)id
                  AndName:(NSString *)name
                  AndDate:(NSDate *)date
-           AndRecurrance:(NSNumber *)recurrance
+           AndRecurrance:(NSUInteger)recurrance
                AndSource:(NSString *)source
           AndShouldAlert:(bool)shouldAlert;
 @end

@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "AttributorAppDelegate.h"
+#import "WhatHolidayIsItAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AttributorAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([WhatHolidayIsItAppDelegate class]));
     }
 }

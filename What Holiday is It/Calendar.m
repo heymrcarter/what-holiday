@@ -10,6 +10,21 @@
 
 @implementation Calendar
 
+- (Calendar *)init {
+    self = [super init];
+    return self;
+}
+
+- (Calendar *)initWithHolidays:(NSMutableArray *)holidays {
+    self = [super init];
+    
+    if (self) {
+        self.calendar = holidays;
+    }
+    
+    return self;
+}
+
 - (NSMutableArray *) calendar {
     if(!_calendar) {
         _calendar = [[NSMutableArray alloc] init];
