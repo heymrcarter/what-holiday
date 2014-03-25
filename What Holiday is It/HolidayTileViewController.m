@@ -10,6 +10,7 @@
 #import "Holiday.h"
 #import "HolidayTile.h"
 #import "HolidayTiles.h"
+#import "Constants.h"
 
 @interface HolidayTileViewController ()
 
@@ -30,7 +31,9 @@
 - (HolidayTileViewController *)initWithHolidays:(Calendar *)calendar {
     self = [super initWithNibName:nil bundle:nil];
     if (self) {
-        self.view = [[HolidayTiles alloc] initWithFrame:CGRectMake(HolidayTilesGeometryLeft, HolidayTilesGeometryTop, HolidayTilesGeometryWidth, HolidayTilesGeometryHeight)];        
+        CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+        CGFloat holidayTilesHeight = screenHeight - (DayDisplayGeometeryHeight + AdViewGeometryHeight + AddHolidayTileGeometryHeight);
+        self.view = [[HolidayTiles alloc] initWithFrame:CGRectMake(HolidayTilesGeometryLeft, HolidayTilesGeometryTop, HolidayTilesGeometryWidth, holidayTilesHeight)];
         
         int top = HolidayTileGeometryTop;
         for (id holiday in calendar.holidays) {

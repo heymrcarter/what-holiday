@@ -12,10 +12,3 @@
 @property (strong, nonatomic) UILabel *dayDescription;
 @property (strong, nonatomic) UILabel *dateDisplay;
 @end
-
-typedef NS_ENUM(NSInteger, DayDisplayGeometery) {
-    DayDisplayGeometeryTop    = 0,
-    DayDisplayGeometeryLeft   = 0,
-    DayDisplayGeometeryHeight = 140,
-    DayDisplayGeometeryWidth  = 320
-};

@@ -8,10 +8,15 @@
 
 #import "WhatHolidayViewController.h"
 #import "DayDisplayView.h"
+#import "AddHolidayTileViewController.h"
+#import "SettingsTileViewController.h"
 #import "Constants.h"
 
 @interface WhatHolidayViewController ()
+@property (strong, nonatomic) DayDisplayView *dayDisplayView;
 @property (strong, nonatomic) HolidayTileViewController *holidayTileController;
+@property (strong, nonatomic) AddHolidayTileViewController *addHolidayTileViewController;
+@property (strong, nonatomic) SettingsTileViewController *settingsTileViewController;
 @property (strong, nonatomic) ADBannerView *adView;
 @end
 
@@ -33,6 +38,38 @@
     return _calendar;
 }
 
+- (DayDisplayView *)dayDisplayView {
+    if (!_dayDisplayView) {
+        CGRect dateDisplayFrame = CGRectMake(DayDisplayGeometeryLeft, DayDisplayGeometeryTop, DayDisplayGeometeryWidth, DayDisplayGeometeryHeight);
+        _dayDisplayView = [[DayDisplayView alloc] initWithFrame:dateDisplayFrame];
+    }
+    return _dayDisplayView;
+}
+
+- (HolidayTileViewController *)holidayTileController {
+    if (!_holidayTileController) {
+        _holidayTileController = [[HolidayTileViewController alloc] initWithHolidays: self.calendar];
+    }
+    
+    return _holidayTileController;
+}
+
+- (AddHolidayTileViewController *)addHolidayTileViewController {
+    if (!_addHolidayTileViewController) {
+        _addHolidayTileViewController = [[AddHolidayTileViewController alloc] initWithNibName:nil bundle:nil];
+    }
+    
+    return _addHolidayTileViewController;
+}
+
+- (SettingsTileViewController *)settingsTileViewController {
+    if (!_settingsTileViewController) {
+        _settingsTileViewController = [[SettingsTileViewController alloc] initWithNibName:nil bundle:nil];
+    }
+    
+    return _settingsTileViewController;
+}
+
 - (ADBannerView *)adView {
     if (!_adView) {
         CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
@@ -47,21 +84,20 @@
     [super viewDidLoad];
     [self setNeedsStatusBarAppearanceUpdate];
     
-    CGRect dateDisplayFrame = CGRectMake(DayDisplayGeometeryLeft, DayDisplayGeometeryTop, DayDisplayGeometeryWidth, DayDisplayGeometeryHeight);
-    DayDisplayView *dateDisplay = [[DayDisplayView alloc] initWithFrame:dateDisplayFrame];
-    
-    self.holidayTileController = [[HolidayTileViewController alloc] initWithHolidays: self.calendar];
-    
-    [self.view addSubview:dateDisplay];
+    [self.view addSubview:self.dayDisplayView];
     [self.view addSubview:self.holidayTileController.view];
+    [self.view addSubview:self.addHolidayTileViewController.view];
+    [self.view addSubview:self.settingsTileViewController.view];
     [self.view addSubview:self.adView];
-    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
     self.holidayTileController = nil;
+    self.addHolidayTileViewController = nil;
+    self.dayDisplayView = nil;
+    self.adView = nil;
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
