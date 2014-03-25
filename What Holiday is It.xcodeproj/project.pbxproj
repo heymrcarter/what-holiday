@@ -11,6 +11,8 @@
 		E2BB4F7A18DF9EA000694F53 /* HolidayTileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BB4F7918DF9EA000694F53 /* HolidayTileViewController.m */; };
 		E2BB4F7D18DF9F5B00694F53 /* HolidayTile.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BB4F7C18DF9F5B00694F53 /* HolidayTile.m */; };
 		E2BB4F8118E1049B00694F53 /* HolidayTiles.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BB4F8018E1049B00694F53 /* HolidayTiles.m */; };
+		E2BB4F8418E12CCA00694F53 /* AddHolidayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BB4F8318E12CCA00694F53 /* AddHolidayViewController.m */; };
+		E2BB4F8718E12D0C00694F53 /* AddHoliday.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BB4F8618E12D0C00694F53 /* AddHoliday.m */; };
 		E2D2379E18DF649A001DD950 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D2379D18DF649A001DD950 /* Foundation.framework */; };
 		E2D237A018DF649A001DD950 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D2379F18DF649A001DD950 /* CoreGraphics.framework */; };
 		E2D237A218DF649A001DD950 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D237A118DF649A001DD950 /* UIKit.framework */; };
@@ -49,6 +51,10 @@
 		E2BB4F7E18DFA2F900694F53 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		E2BB4F7F18E1049B00694F53 /* HolidayTiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HolidayTiles.h; sourceTree = "<group>"; };
 		E2BB4F8018E1049B00694F53 /* HolidayTiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HolidayTiles.m; sourceTree = "<group>"; };
+		E2BB4F8218E12CCA00694F53 /* AddHolidayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddHolidayViewController.h; sourceTree = "<group>"; };
+		E2BB4F8318E12CCA00694F53 /* AddHolidayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddHolidayViewController.m; sourceTree = "<group>"; };
+		E2BB4F8518E12D0C00694F53 /* AddHoliday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddHoliday.h; sourceTree = "<group>"; };
+		E2BB4F8618E12D0C00694F53 /* AddHoliday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddHoliday.m; sourceTree = "<group>"; };
 		E2D2379A18DF649A001DD950 /* What Holiday is It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What Holiday is It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D2379D18DF649A001DD950 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E2D2379F18DF649A001DD950 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -107,6 +113,8 @@
 				E2BB4F7C18DF9F5B00694F53 /* HolidayTile.m */,
 				E2BB4F7F18E1049B00694F53 /* HolidayTiles.h */,
 				E2BB4F8018E1049B00694F53 /* HolidayTiles.m */,
+				E2BB4F8518E12D0C00694F53 /* AddHoliday.h */,
+				E2BB4F8618E12D0C00694F53 /* AddHoliday.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -118,6 +126,8 @@
 				E2D237B318DF649A001DD950 /* WhatHolidayViewController.m */,
 				E2BB4F7818DF9EA000694F53 /* HolidayTileViewController.h */,
 				E2BB4F7918DF9EA000694F53 /* HolidayTileViewController.m */,
+				E2BB4F8218E12CCA00694F53 /* AddHolidayViewController.h */,
+				E2BB4F8318E12CCA00694F53 /* AddHolidayViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -318,6 +328,8 @@
 				E20C27C618DF7D3D004609E6 /* DayDisplayView.m in Sources */,
 				E2D237AA18DF649A001DD950 /* main.m in Sources */,
 				E2BB4F8118E1049B00694F53 /* HolidayTiles.m in Sources */,
+				E2BB4F8418E12CCA00694F53 /* AddHolidayViewController.m in Sources */,
+				E2BB4F8718E12D0C00694F53 /* AddHoliday.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
