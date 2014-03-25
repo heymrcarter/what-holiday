@@ -10,7 +10,7 @@
 #import "Holiday.h"
 
 @interface Calendar : NSObject
-@property (strong, nonatomic) NSMutableArray *calendar;
+@property (strong, nonatomic) NSMutableArray *holidays;
 
 - (Calendar *) init;
 - (Calendar *) initWithHolidays:(NSMutableArray *) holidays;

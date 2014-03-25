@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E20C27C618DF7D3D004609E6 /* DayDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = E20C27C518DF7D3D004609E6 /* DayDisplayView.m */; };
+		E2BB4F7A18DF9EA000694F53 /* HolidayTileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BB4F7918DF9EA000694F53 /* HolidayTileViewController.m */; };
+		E2BB4F7D18DF9F5B00694F53 /* HolidayTile.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BB4F7C18DF9F5B00694F53 /* HolidayTile.m */; };
+		E2BB4F8118E1049B00694F53 /* HolidayTiles.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BB4F8018E1049B00694F53 /* HolidayTiles.m */; };
 		E2D2379E18DF649A001DD950 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D2379D18DF649A001DD950 /* Foundation.framework */; };
 		E2D237A018DF649A001DD950 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D2379F18DF649A001DD950 /* CoreGraphics.framework */; };
 		E2D237A218DF649A001DD950 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D237A118DF649A001DD950 /* UIKit.framework */; };
@@ -39,6 +42,13 @@
 /* Begin PBXFileReference section */
 		E20C27C418DF7D3D004609E6 /* DayDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayDisplayView.h; sourceTree = "<group>"; };
 		E20C27C518DF7D3D004609E6 /* DayDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayDisplayView.m; sourceTree = "<group>"; };
+		E2BB4F7818DF9EA000694F53 /* HolidayTileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HolidayTileViewController.h; sourceTree = "<group>"; };
+		E2BB4F7918DF9EA000694F53 /* HolidayTileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HolidayTileViewController.m; sourceTree = "<group>"; };
+		E2BB4F7B18DF9F5B00694F53 /* HolidayTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HolidayTile.h; sourceTree = "<group>"; };
+		E2BB4F7C18DF9F5B00694F53 /* HolidayTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HolidayTile.m; sourceTree = "<group>"; };
+		E2BB4F7E18DFA2F900694F53 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		E2BB4F7F18E1049B00694F53 /* HolidayTiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HolidayTiles.h; sourceTree = "<group>"; };
+		E2BB4F8018E1049B00694F53 /* HolidayTiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HolidayTiles.m; sourceTree = "<group>"; };
 		E2D2379A18DF649A001DD950 /* What Holiday is It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What Holiday is It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D2379D18DF649A001DD950 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E2D2379F18DF649A001DD950 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -93,8 +103,23 @@
 			children = (
 				E20C27C418DF7D3D004609E6 /* DayDisplayView.h */,
 				E20C27C518DF7D3D004609E6 /* DayDisplayView.m */,
+				E2BB4F7B18DF9F5B00694F53 /* HolidayTile.h */,
+				E2BB4F7C18DF9F5B00694F53 /* HolidayTile.m */,
+				E2BB4F7F18E1049B00694F53 /* HolidayTiles.h */,
+				E2BB4F8018E1049B00694F53 /* HolidayTiles.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		E2BB4F7718DF9E7400694F53 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E2D237B218DF649A001DD950 /* WhatHolidayViewController.h */,
+				E2D237B318DF649A001DD950 /* WhatHolidayViewController.m */,
+				E2BB4F7818DF9EA000694F53 /* HolidayTileViewController.h */,
+				E2BB4F7918DF9EA000694F53 /* HolidayTileViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		E2D2379118DF6499001DD950 = {
@@ -130,11 +155,10 @@
 		E2D237A318DF649A001DD950 /* What Holiday is It */ = {
 			isa = PBXGroup;
 			children = (
+				E2BB4F7718DF9E7400694F53 /* Controllers */,
 				E20C27C318DF7D0F004609E6 /* Views */,
 				E2D237D218DF6536001DD950 /* Models */,
 				E2D237AF18DF649A001DD950 /* Main.storyboard */,
-				E2D237B218DF649A001DD950 /* WhatHolidayViewController.h */,
-				E2D237B318DF649A001DD950 /* WhatHolidayViewController.m */,
 				E2D237B518DF649A001DD950 /* Images.xcassets */,
 				E2D237A418DF649A001DD950 /* Supporting Files */,
 			);
@@ -150,6 +174,7 @@
 				E2D237A618DF649A001DD950 /* InfoPlist.strings */,
 				E2D237A918DF649A001DD950 /* main.m */,
 				E2D237AB18DF649A001DD950 /* What Holiday is It-Prefix.pch */,
+				E2BB4F7E18DFA2F900694F53 /* Constants.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -284,12 +309,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2BB4F7D18DF9F5B00694F53 /* HolidayTile.m in Sources */,
 				E2D237AE18DF649A001DD950 /* WhatHolidayIsItAppDelegate.m in Sources */,
 				E2D237B418DF649A001DD950 /* WhatHolidayViewController.m in Sources */,
 				E2F1463418DF6D4200A7A73D /* Calendar.m in Sources */,
+				E2BB4F7A18DF9EA000694F53 /* HolidayTileViewController.m in Sources */,
 				E2D237D518DF656C001DD950 /* Holiday.m in Sources */,
 				E20C27C618DF7D3D004609E6 /* DayDisplayView.m in Sources */,
 				E2D237AA18DF649A001DD950 /* main.m in Sources */,
+				E2BB4F8118E1049B00694F53 /* HolidayTiles.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

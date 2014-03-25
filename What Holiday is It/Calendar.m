@@ -19,29 +19,29 @@
     self = [super init];
     
     if (self) {
-        self.calendar = holidays;
+        self.holidays = holidays;
     }
     
     return self;
 }
 
-- (NSMutableArray *) calendar {
-    if(!_calendar) {
-        _calendar = [[NSMutableArray alloc] init];
+- (NSMutableArray *) holidays {
+    if(!_holidays) {
+        _holidays = [[NSMutableArray alloc] init];
     }
     
-    return _calendar;
+    return _holidays;
 }
 
 - (void) addHoliday:(Holiday *)holiday {
     if ([holiday isKindOfClass:[Holiday class]]) {
-        [self.calendar addObject:holiday];
+        [self.holidays addObject:holiday];
     }
 }
 
 - (void) removeHoliday:(Holiday *)holiday {
     if ([holiday isKindOfClass:[Holiday class]]) {
-        [self.calendar removeObject:holiday];
+        [self.holidays removeObject:holiday];
     }
 }
 

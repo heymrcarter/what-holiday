@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
+#import "Calendar.h"
+#import "HolidayTileViewController.h"
 
-@interface WhatHolidayViewController : UIViewController
-
+@interface WhatHolidayViewController : UIViewController <ADBannerViewDelegate>
+@property (strong, nonatomic) Calendar *calendar;
 @end
