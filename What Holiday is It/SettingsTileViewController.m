@@ -16,27 +16,41 @@
 
 @implementation SettingsTileViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (UIButton *)settingsButton {
+    if (!_settingsButton) {
+        _settingsButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_settingsButton setTitle:@"Settings" forState:UIControlStateNormal];
+        [_settingsButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_settingsButton setFrame:CGRectMake(0, 0, AddHolidayTileGeometryWidth, AddHolidayTileGeometryHeight)];
+    }
+    
+    return _settingsButton;
+}
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
         CGFloat settingsButtonTop = screenHeight - (AdViewGeometryHeight + AddHolidayTileGeometryHeight);
         self.view = [[SettingsTile alloc] initWithFrame:CGRectMake(SettingsTileGeometryLeft, settingsButtonTop, SettingsTileGeometryWidth, SettingsTileGeometryHeight)];
+        
+        [self.view addSubview:self.settingsButton];
     }
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)settingsButtonPressed:(id)sender {
+    
 }
 
 /*

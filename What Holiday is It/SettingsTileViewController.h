@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SettingsTileViewController : UIViewController
+@property (strong, nonatomic) UIButton *settingsButton;
 
+- (IBAction)settingsButtonPressed:(id)sender;
 @end

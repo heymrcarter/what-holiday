@@ -1,19 +1,20 @@
 //
-//  SettingsTile.m
+//  Settings.m
 //  What Holiday is It
 //
 //  Created by Tom Carter on 3/25/14.
 //  Copyright (c) 2014 Louglu. All rights reserved.
 //
 
-#import "SettingsTile.h"
+#import "Settings.h"
 
-@implementation SettingsTile
+@implementation Settings
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
+        // Initialization code
         self.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.67];
     }
     return self;

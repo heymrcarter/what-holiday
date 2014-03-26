@@ -19,9 +19,11 @@
 - (UIButton *)addHolidayButton {
     if (!_addHolidayButton) {
         _addHolidayButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        _addHolidayButton.titleLabel.text = @"Add Holiday";
-        _addHolidayButton.backgroundColor = [UIColor blueColor];
+        [_addHolidayButton setTitle:@"Add Holiday" forState:UIControlStateNormal];
+        [_addHolidayButton setFrame:CGRectMake(0, 0, AddHolidayTileGeometryWidth, AddHolidayTileGeometryHeight)];
+        _addHolidayButton.backgroundColor = [UIColor clearColor];
         _addHolidayButton.tintColor = [UIColor whiteColor];
+        [_addHolidayButton addTarget:self action:@selector(addHolidayButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     }
     
     return _addHolidayButton;
@@ -52,7 +54,9 @@
 }
 
 -(IBAction)addHolidayButtonTapped:(UIButton *)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Add holiday" message:@"" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
     
+    [alert show];
 }
 
 /*
