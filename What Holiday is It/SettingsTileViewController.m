@@ -9,12 +9,21 @@
 #import "SettingsTileViewController.h"
 #import "SettingsTile.h"
 #import "Constants.h"
+#import "SettingsViewController.h"
 
 @interface SettingsTileViewController ()
-
+@property (strong, nonatomic) SettingsViewController *settingsController;
 @end
 
 @implementation SettingsTileViewController
+
+- (id)settingsController {
+    if (!_settingsController) {
+        _settingsController = [[SettingsViewController alloc] initWithNibName:@"Settings View" bundle:nil];
+    }
+    
+    return _settingsController;
+}
 
 - (UIButton *)settingsButton {
     if (!_settingsButton) {
@@ -22,6 +31,7 @@
         [_settingsButton setTitle:@"Settings" forState:UIControlStateNormal];
         [_settingsButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_settingsButton setFrame:CGRectMake(0, 0, AddHolidayTileGeometryWidth, AddHolidayTileGeometryHeight)];
+        [_settingsButton addTarget:self action:@selector(settingsButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     }
     
     return _settingsButton;
@@ -50,7 +60,7 @@
 }
 
 - (IBAction)settingsButtonPressed:(id)sender {
-    
+    [self.view addSubview:self.settingsController.view];
 }
 
 /*

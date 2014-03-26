@@ -139,6 +139,7 @@
 				E2BB4F9218E14F6000694F53 /* SettingsTile.m */,
 				E2C2258918E25EE2004CF7E9 /* Settings.h */,
 				E2C2258A18E25EE2004CF7E9 /* Settings.m */,
+				E2D237D218DF6536001DD950 /* Models */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -197,7 +198,6 @@
 			children = (
 				E2BB4F7718DF9E7400694F53 /* Controllers */,
 				E20C27C318DF7D0F004609E6 /* Views */,
-				E2D237D218DF6536001DD950 /* Models */,
 				E2D237AF18DF649A001DD950 /* Main.storyboard */,
 				E2D237B518DF649A001DD950 /* Images.xcassets */,
 				E2D237A418DF649A001DD950 /* Supporting Files */,

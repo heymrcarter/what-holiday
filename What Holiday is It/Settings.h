@@ -11,3 +11,8 @@
 @interface Settings : UIView
 
 @end
+
+typedef NS_ENUM(NSInteger, SettingsGeometry) {
+    SettingsGeometryTop  = 0,
+    SettingsGeometryLeft = 0
+};
